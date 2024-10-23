@@ -13,6 +13,7 @@ enum PageType: String, CaseIterable, Identifiable {
     }
 
     case circle
+    case hStack
     case piano
     case calendar
     case circleAnimation
@@ -25,6 +26,36 @@ enum PageType: String, CaseIterable, Identifiable {
                 radius: 170,
                 musicNoteInfos: []
             )
+        case .hStack:
+            VStack {
+                HStack(spacing: 30) {
+                    Text("Hello")
+                        .padding()
+                        .background(Color.red)
+                    Text("World")
+                        .padding()
+                        .background(Color.blue)
+                    Text("!")
+                        .padding()
+                        .background(Color.green)
+                }
+                .padding()
+                Color.white
+                    .frame(height: 4)
+                CustomHStack(spacing: 30) {
+                    Text("Hello")
+                        .padding()
+                        .background(Color.red)
+                    Text("World")
+                        .padding()
+                        .background(Color.blue)
+                    Text("!")
+                        .padding()
+                        .background(Color.green)
+                }
+                .padding()
+            }
+            .background(.black)
         case .piano:
             PianoView()
                 .frame(height: 200)
@@ -43,6 +74,7 @@ enum PageType: String, CaseIterable, Identifiable {
     var title: String {
         switch self {
         case .circle: return "Circle"
+        case .hStack: return "HStack"
         case .piano: return "PianoView"
         case .calendar: return "CalendarView"
         case .circleAnimation: return "CircleAnimationView"
