@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C3E284352CC7B84A000EB90E /* PianoUI in Frameworks */ = {isa = PBXBuildFile; productRef = C3E284342CC7B84A000EB90E /* PianoUI */; };
+		C3E284372CC7B84A000EB90E /* PianoUICore in Frameworks */ = {isa = PBXBuildFile; productRef = C3E284362CC7B84A000EB90E /* PianoUICore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C3E284192CC7B3E2000EB90E /* LoveSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E284352CC7B84A000EB90E /* PianoUI in Frameworks */,
+				C3E284372CC7B84A000EB90E /* PianoUICore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = LoveSwift;
 			packageProductDependencies = (
+				C3E284342CC7B84A000EB90E /* PianoUI */,
+				C3E284362CC7B84A000EB90E /* PianoUICore */,
 			);
 			productName = LoveSwift;
 			productReference = C3E284192CC7B3E2000EB90E /* LoveSwift.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = C3E284102CC7B3E2000EB90E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C3E284332CC7B84A000EB90E /* XCLocalSwiftPackageReference "../PianoUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C3E2841A2CC7B3E2000EB90E /* Products */;
 			projectDirPath = "";
@@ -339,6 +351,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C3E284332CC7B84A000EB90E /* XCLocalSwiftPackageReference "../PianoUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../PianoUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3E284342CC7B84A000EB90E /* PianoUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PianoUI;
+		};
+		C3E284362CC7B84A000EB90E /* PianoUICore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PianoUICore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3E284112CC7B3E2000EB90E /* Project object */;
 }
